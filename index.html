@@ -9,6 +9,16 @@
             display: inline-block;
             width: 100px;
         }
+        summary{
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f0F0F0;
+        }
+        details[open]{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -20,13 +30,41 @@
                     <label for="idname">Nom</label><input type="text" name="nom" id="idname"><br>
                     <label for="idprenom">Prenom</label><input type="text" name="prenom" id="idprenom"><br>
                     <label for="idage">Age</label><input type="number" name="age" id="idage">
-                
-                
                 </fieldset>
                 <fieldset>
                     <input type="submit" value="Envoyer">
                 </fieldset>
             </form>
+
+<details>
+    <summary>test</summary>
+    <select size="20">
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+        <option>-- poire --</option>
+
+    </select>
+</details>
+
 
             <script type="text/javascript">
 
