@@ -8,7 +8,7 @@
 <body>
             <h1>ajout d'un formulaire</h1>
 
-            <form action="#" method="get">
+            <form action="#" method="#">
                 <fieldset>
                     <legend>Un test pour git</legend>
                     <label for="idname">Nom</label><input type="text" name="nom" id="idname"><br>
@@ -18,5 +18,24 @@
                     <input type="submit" value="Envoyer">
                 </fieldset>
             </form>
+
+            <script type="text/javascript">
+
+        const form1 = document.querySelector("form");
+                
+                    if(form1)
+                    {
+                        form1.addEventListener('submit',(e)=>{
+                            e.preventDefault();
+                            e.stopPropagation();
+const data = new FormData(form1);
+console.log(`ton Nom est ${data.get("nom")}`);
+console.log(`ton Prenom est ${data.get("prenom")}`);
+           
+                             
+                        })
+                    }
+        
+            </script>
 </body>
 </html>
